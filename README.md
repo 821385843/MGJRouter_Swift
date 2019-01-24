@@ -1,16 +1,6 @@
 # MGJRouter_Swift
 一个高效/灵活的 iOS URL Router
 
-### 2015-08-22 更新
-
-#### 添加了同步获取 Object 的方法
-
-有些场景我们可能需要根据 URL 获取某个 Object，所以就添加了这个方法
-
-```objc
-UIView *searchTopBar = [MGJRouter objectForURL:@"search_top_bar"];
-```
-
 ## 为什么要再造一个轮子？
 已经有几款不错的 Router 了，如 [JLRoutes](https://github.com/joeldev/JLRoutes), [HHRouter](https://github.com/Huohua/HHRouter), 但细看了下之后发现，还是不太满足需求。
 
