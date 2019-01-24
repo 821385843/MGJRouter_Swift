@@ -66,6 +66,7 @@ MGJRouter_Swift 是蘑菇街 MGJRouter 的 Swift 版，完全实现 MGJRouter �
 
   # s.platform     = :ios
   s.platform     = :ios, "8.0"
+  s.swift_version = '4.2'
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
