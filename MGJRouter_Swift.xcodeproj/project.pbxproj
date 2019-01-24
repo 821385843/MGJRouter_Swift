@@ -14,6 +14,7 @@
 		5D716B9A21F07B8800CF07CC /* MGJRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D716B9921F07B8800CF07CC /* MGJRouter.swift */; };
 		5D716B9E21F0835400CF07CC /* DemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D716B9D21F0835400CF07CC /* DemoListViewController.swift */; };
 		5D716BA021F0837A00CF07CC /* DemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D716B9F21F0837A00CF07CC /* DemoDetailViewController.swift */; };
+		5D716C3D21F95E5500CF07CC /* MGJRouter_Swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5D716C3C21F95E5500CF07CC /* MGJRouter_Swift.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5D716B9921F07B8800CF07CC /* MGJRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGJRouter.swift; sourceTree = "<group>"; };
 		5D716B9D21F0835400CF07CC /* DemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListViewController.swift; sourceTree = "<group>"; };
 		5D716B9F21F0837A00CF07CC /* DemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDetailViewController.swift; sourceTree = "<group>"; };
+		5D716C3C21F95E5500CF07CC /* MGJRouter_Swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MGJRouter_Swift.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		5D716AFF21EC7A0C00CF07CC = {
 			isa = PBXGroup;
 			children = (
+				5D716C3C21F95E5500CF07CC /* MGJRouter_Swift.podspec */,
 				5D716B0A21EC7A0C00CF07CC /* MGJRouter_Swift */,
 				5D716B0921EC7A0C00CF07CC /* Products */,
 			);
@@ -136,6 +139,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D716C3D21F95E5500CF07CC /* MGJRouter_Swift.podspec in Resources */,
 				5D716B1621EC7A0E00CF07CC /* LaunchScreen.storyboard in Resources */,
 				5D716B1321EC7A0E00CF07CC /* Assets.xcassets in Resources */,
 			);

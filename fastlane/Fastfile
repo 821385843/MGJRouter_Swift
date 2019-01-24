@@ -1,0 +1,42 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "MGJRouter_Swift 使用这个航道，可以快速的对自己的私有库进行升级维护"
+  lane :MGJRouter_Swift do |options|
+
+  tagName = options[:tag]
+  targetName = options[:target]
+  commitMsg = options[: message]
+
+git_add(path: ".")
+git_commit(path: ".", message: "#{commitMsg}")
+push_to_git_remote
+
+add_git_tag(
+tag: tagName
+)
+
+push_git_tags
+
+pod_lib_lint(allow_warnings: true)
+
+pod_push(path: "#{targetName}.podspec", repo: "MGJRouter_Swift")
+
+
+  end
+end
