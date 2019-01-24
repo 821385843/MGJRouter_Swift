@@ -10,7 +10,7 @@ import UIKit
 
 public class MGJRouter: NSObject {
     
-    public static let shared = MGJRouter()
+    static let shared = MGJRouter()
     
     /**
      *  保存了所有已注册的 URL
@@ -24,7 +24,7 @@ public class MGJRouter: NSObject {
     /// - Parameters:
     ///   - URLPattern: 带上 scheme，如 mgj://beauty/:id
     ///   - handler: 该 闭包 会传一个字典，包含了注册的 URL 中对应的变量。假如注册的 URL 为 mgj://beauty/:id 那么，就会传一个 @{@"id": 4} 这样的字典过来
-    class func registerWithHandler(_ urlPattern: String, _ toHandler: MGJRouterHandler?) {
+    public class func registerWithHandler(_ urlPattern: String, _ toHandler: MGJRouterHandler?) {
         shared.add(urlPattern, toHandler)
     }
     
@@ -35,14 +35,14 @@ public class MGJRouter: NSObject {
     ///   - toObjectHandler: 该 block 会传一个字典，包含了注册的 URL 中对应的变量。
     ///                      假如注册的 URL 为 mgj://beauty/:id 那么，就会传一个 @{@"id": 4} 这样的字典过来
     ///                      自带的 key 为 @"url" 和 @"completion" (如果有的话)
-    class func registerWithObjectHandler(_ urlPattern: String, toObjectHandler: MGJRouterObjectHandler?) {
+    public class func registerWithObjectHandler(_ urlPattern: String, toObjectHandler: MGJRouterObjectHandler?) {
         shared.add(urlPattern, toObjectHandler)
     }
     
     /// 取消注册某个 URL Pattern
     ///
     /// - Parameter urlPattern: URLPattern
-    class func deregister(_ urlPattern: String) {
+    public class func deregister(_ urlPattern: String) {
         shared.remove(urlPattern)
     }
     
@@ -50,7 +50,7 @@ public class MGJRouter: NSObject {
     /// 会在已注册的 URL -> Handler 中寻找，如果找到，则执行 Handler
     ///
     /// - Parameter url: 带 Scheme，如 mgj://beauty/3
-    class func open(_ url: String) {
+    public class func open(_ url: String) {
         open(url, nil)
     }
     
@@ -59,7 +59,7 @@ public class MGJRouter: NSObject {
     /// - Parameters:
     ///   - _url: 带 Scheme 的 URL，如 mgj://beauty/4
     ///   - completion: URL 处理完成后的 callback，完成的判定跟具体的业务相关
-    class func open(_ url: String, _ completion: ((_ result: Any?)->())?) {
+    public class func open(_ url: String, _ completion: ((_ result: Any?)->())?) {
         open(url, nil, completion)
     }
     
@@ -69,7 +69,7 @@ public class MGJRouter: NSObject {
     ///   - _url: 带 Scheme 的 URL，如 mgj://beauty/4
     ///   - userInfo: 附加参数
     ///   - completion: URL 处理完成后的 callback，完成的判定跟具体的业务相关
-    class func open(_ url: String, _ userInfo: [String: Any]?,_ completion: ((_ result: Any?)->())?) {
+    public class func open(_ url: String, _ userInfo: [String: Any]?,_ completion: ((_ result: Any?)->())?) {
         guard let urlString = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
             let parameters = shared.extractParameters(urlString, false)
             else {
@@ -111,7 +111,7 @@ public class MGJRouter: NSObject {
     ///
     /// - Parameter url: 带 Scheme，如 mgj://beauty/3
     /// - Returns: 返回值
-    class func object(_ url: String) -> Any? {
+    public class func object(_ url: String) -> Any? {
         return object(url, nil)
     }
     
@@ -121,7 +121,7 @@ public class MGJRouter: NSObject {
     ///   - url: 带 Scheme，如 mgj://beauty/3
     ///   - userInfo: 附加参数
     /// - Returns: 返回值
-    class func object(_ url: String, _ userInfo: [String: Any]?) -> Any? {
+    public class func object(_ url: String, _ userInfo: [String: Any]?) -> Any? {
         guard let urlString = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed),
             let parameters = shared.extractParameters(urlString, false)
             else {
@@ -144,11 +144,11 @@ public class MGJRouter: NSObject {
     ///
     /// - Parameter url: 带 Scheme，如 mgj://beauty/3
     /// - Returns: 返回 Bool 值
-    class func canOpen(url: String) -> Bool {
+    public class func canOpen(url: String) -> Bool {
         return (shared.extractParameters(url, false) != nil)
     }
     
-    class func canOpen(url: String, _ matchExactly: Bool) -> Bool {
+    public class func canOpen(url: String, _ matchExactly: Bool) -> Bool {
         return (shared.extractParameters(url, true) != nil)
     }
     
@@ -161,7 +161,7 @@ public class MGJRouter: NSObject {
     ///   - pattern: url pattern 比如 @"beauty/:id"
     ///   - parameters: 一个数组，数量要跟 pattern 里的变量一致
     /// - Returns: 返回生成的URL String
-    class func generateURL(_ pattern: String, _ parameters: [String]) -> String? {
+    public class func generateURL(_ pattern: String, _ parameters: [String]) -> String? {
         var startIndexOfColon = 0
         
         var placeholders = [String]()
