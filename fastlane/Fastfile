@@ -24,7 +24,6 @@ platform :ios do
 
         git_add(path: ".")
         git_commit(path: ".", message: "#{commitMsg}")
-        git_pull
         push_to_git_remote
 
         add_git_tag(
