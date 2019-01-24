@@ -39,8 +39,8 @@ MGJRouter_Swift 是蘑菇街 MGJRouter 的 Swift 版，完全实现 MGJRouter �
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  # s.license      = "MIT (example)"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
