@@ -1,5 +1,5 @@
 # MGJRouter_Swift
-一个高效/灵活的 iOS Swift版 URL Router，完全实现了蘑菇街Object-C版 MGJRouter(https://github.com/meili/MGJRouter) 的所有功能。
+一个高效/灵活的 iOS Swift版 URL Router，完全实现了蘑菇街Object-C版 [MGJRouter](https://github.com/meili/MGJRouter) 的所有功能。
 
 ## 为什么要再造一个轮子？
 已经有几款不错的 Router 了，如 [JLRoutes](https://github.com/joeldev/JLRoutes), [HHRouter](https://github.com/Huohua/HHRouter), 但细看了下之后发现，还是不太满足需求。
