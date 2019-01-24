@@ -22,7 +22,6 @@ MGJRouter.registerWithHandler("mgj://foo/bar") { (routerParameters) in
 }
         
 MGJRouter.open("mgj://foo/bar")
-
 ```
 
 当匹配到 URL 后，`routerParameters` 会自带几个 key
