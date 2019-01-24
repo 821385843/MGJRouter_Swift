@@ -22,6 +22,7 @@ platform :ios do
         tagName = options[:tag]
         commitMsg = options[:msg]
 
+        git_pull(only_tags: true)
         git_add(path: ".")
         git_commit(path: ".", message: "#{commitMsg}")
         push_to_git_remote
