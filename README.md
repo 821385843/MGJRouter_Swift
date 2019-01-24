@@ -9,7 +9,7 @@
 ## 安装
 
 ```
-pod 'MGJRouter_Swift', '~>0.1.0'
+pod 'MGJRouter_Swift'
 ```
 
 ## 使用姿势
