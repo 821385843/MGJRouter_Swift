@@ -2,7 +2,7 @@
 一个高效/灵活的 iOS Swift 版 URL Router，完全实现了蘑菇街 Object-C 版 [MGJRouter](https://github.com/meili/MGJRouter) 的所有功能。
 
 ## 为什么要写 MGJRouter_Swift ？
-看了一下几款不错的 Object-C 版的 Router，比如：[JLRoutes](https://github.com/joeldev/JLRoutes)、[HHRouter](https://github.com/Huohua/HHRouter)、[MGJRouter](https://github.com/meili/MGJRouter)，还是觉得 Object-C 版 MGJRouter 查找 URL更高效。
+看了一下几款不错的 Object-C 版的 Router，比如：[JLRoutes](https://github.com/joeldev/JLRoutes)、[HHRouter](https://github.com/Huohua/HHRouter)、[MGJRouter](https://github.com/meili/MGJRouter)，还是觉得 Object-C 版 MGJRouter 查找 URL 更高效。
 
 虽然 Object-C 版 MGJRouter 在 Swift 中也可以使用，但是也存在问题，比如 block 调用这块。所以说基于这个缺点，MGJRouter_Swift就诞生了。
 
