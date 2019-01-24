@@ -1,7 +1,4 @@
 # MGJRouter_Swift
-MGJRouter之Swift版
-
-# MGJRouter
 一个高效/灵活的 iOS URL Router
 
 ### 2015-08-22 更新
