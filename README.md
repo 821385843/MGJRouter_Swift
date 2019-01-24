@@ -120,3 +120,5 @@ MGJRouter.open(MGJRouter.generateURL(TEMPLATE_URL, ["Hangzhou"]) ?? "")
 
 MGJRouter_Swift 被许可在 MIT 协议下使用。查阅 LICENSE 文件来获得更多信息。
 
+## 作者有话说
+如果你有什么建议，可以关注我的公众号：iOS开发者进阶，直接留言就可以了，留言必回。
