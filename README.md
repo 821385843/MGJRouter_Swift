@@ -122,10 +122,6 @@ MGJRouter_Swift 被许可在 MIT 协议下使用。查阅 LICENSE 文件来获�
 ## 作者其他框架
 [RSA_Swift](https://github.com/821385843/RSA_Swift)：这是一个 `Swift` 版本轻量级的框架，框架功能包括：`RSA` 加密/解密字符串、`RSA` 加密/解密 `Data`、字符串的 `MD5`、文件的 `MD5` 值的获取。
 
-[XWCountDownButton_OC](https://github.com/821385843/XWCountDownButtonDemo)：这是一个 `Object-C` 版本的小框架，可以使用 `pod`，应用于短信验证码倒计时。
-
-[XWCountDownButton](https://github.com/821385843/XWCountDownDemo_Swift)：这是一个 `Swift` 版本的小框架，可以使用 `pod`，应用于短信验证码倒计时。
-
 
 ## 作者有话说
 如果你有什么建议，可以关注我的公众号：iOS开发者进阶，直接留言，留言必回。
