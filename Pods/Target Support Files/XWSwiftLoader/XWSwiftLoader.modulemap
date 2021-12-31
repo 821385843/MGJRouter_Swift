@@ -1,0 +1,6 @@
+framework module XWSwiftLoader {
+  umbrella header "XWSwiftLoader-umbrella.h"
+
+  export *
+  module * { export * }
+}

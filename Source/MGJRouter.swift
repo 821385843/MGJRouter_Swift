@@ -341,7 +341,7 @@ extension MGJRouter {
             if (subRoutes["_"] != nil) {
                 parameters["block"] = subRoutes["_"]
             }
-            
+            print(parameters)
             return parameters
         }
         
@@ -353,6 +353,7 @@ extension MGJRouter {
             parameters["block"] = subRoutes["_"]
         }
         
+        print(parameters)
         return parameters
     }
     

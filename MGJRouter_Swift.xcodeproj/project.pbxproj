@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05081265277C0274005DC5AB /* MGJRouterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05081264277C0274005DC5AB /* MGJRouterModel.swift */; };
+		0508127C277EFE77005DC5AB /* swift.m in Sources */ = {isa = PBXBuildFile; fileRef = 0508127B277EFE77005DC5AB /* swift.m */; };
 		5D716B0C21EC7A0C00CF07CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D716B0B21EC7A0C00CF07CC /* AppDelegate.swift */; };
 		5D716B1321EC7A0E00CF07CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D716B1221EC7A0E00CF07CC /* Assets.xcassets */; };
 		5D716B1621EC7A0E00CF07CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D716B1421EC7A0E00CF07CC /* LaunchScreen.storyboard */; };
@@ -16,9 +18,12 @@
 		5D716BA021F0837A00CF07CC /* DemoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D716B9F21F0837A00CF07CC /* DemoDetailViewController.swift */; };
 		5D716C3D21F95E5500CF07CC /* MGJRouter_Swift.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 5D716C3C21F95E5500CF07CC /* MGJRouter_Swift.podspec */; };
 		5D716C5D21F9B06A00CF07CC /* Fastfile in Resources */ = {isa = PBXBuildFile; fileRef = 5D716C5C21F9B06A00CF07CC /* Fastfile */; };
+		B2E8A34F2E0C7260501E15B1 /* Pods_MGJRouter_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B27AFF74BE748551FE98FB2B /* Pods_MGJRouter_Swift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05081264277C0274005DC5AB /* MGJRouterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGJRouterModel.swift; sourceTree = "<group>"; };
+		0508127B277EFE77005DC5AB /* swift.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = swift.m; sourceTree = "<group>"; };
 		5D716B0821EC7A0C00CF07CC /* MGJRouter_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGJRouter_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D716B0B21EC7A0C00CF07CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D716B1221EC7A0E00CF07CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		5D716B9F21F0837A00CF07CC /* DemoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoDetailViewController.swift; sourceTree = "<group>"; };
 		5D716C3C21F95E5500CF07CC /* MGJRouter_Swift.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MGJRouter_Swift.podspec; sourceTree = "<group>"; };
 		5D716C5C21F9B06A00CF07CC /* Fastfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Fastfile; path = fastlane/Fastfile; sourceTree = "<group>"; };
+		ADFED214CA9445FEE705EEA6 /* Pods-MGJRouter_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGJRouter_Swift.debug.xcconfig"; path = "Target Support Files/Pods-MGJRouter_Swift/Pods-MGJRouter_Swift.debug.xcconfig"; sourceTree = "<group>"; };
+		B27AFF74BE748551FE98FB2B /* Pods_MGJRouter_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGJRouter_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3AD19F8C5324FEF0E16E71B /* Pods-MGJRouter_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGJRouter_Swift.release.xcconfig"; path = "Target Support Files/Pods-MGJRouter_Swift/Pods-MGJRouter_Swift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,12 +45,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E8A34F2E0C7260501E15B1 /* Pods_MGJRouter_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F482B6C742B50EDE2024349 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B27AFF74BE748551FE98FB2B /* Pods_MGJRouter_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5D716AFF21EC7A0C00CF07CC = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +67,8 @@
 				5D716C3C21F95E5500CF07CC /* MGJRouter_Swift.podspec */,
 				5D716B0A21EC7A0C00CF07CC /* MGJRouter_Swift */,
 				5D716B0921EC7A0C00CF07CC /* Products */,
+				CB28AFB6375A75BE894C1372 /* Pods */,
+				0F482B6C742B50EDE2024349 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +83,7 @@
 		5D716B0A21EC7A0C00CF07CC /* MGJRouter_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				0508127B277EFE77005DC5AB /* swift.m */,
 				5D716B1D21EC7A4100CF07CC /* Source */,
 				5D716B0B21EC7A0C00CF07CC /* AppDelegate.swift */,
 				5D716B9D21F0835400CF07CC /* DemoListViewController.swift */,
@@ -80,9 +100,19 @@
 			children = (
 				5D716B2021EC7AE000CF07CC /* MGJMacro.swift */,
 				5D716B9921F07B8800CF07CC /* MGJRouter.swift */,
+				05081264277C0274005DC5AB /* MGJRouterModel.swift */,
 			);
 			path = Source;
 			sourceTree = SOURCE_ROOT;
+		};
+		CB28AFB6375A75BE894C1372 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ADFED214CA9445FEE705EEA6 /* Pods-MGJRouter_Swift.debug.xcconfig */,
+				B3AD19F8C5324FEF0E16E71B /* Pods-MGJRouter_Swift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -91,9 +121,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D716B1A21EC7A0E00CF07CC /* Build configuration list for PBXNativeTarget "MGJRouter_Swift" */;
 			buildPhases = (
+				1596D9D9F5DA3653830B9EA5 /* [CP] Check Pods Manifest.lock */,
 				5D716B0421EC7A0C00CF07CC /* Sources */,
 				5D716B0521EC7A0C00CF07CC /* Frameworks */,
 				5D716B0621EC7A0C00CF07CC /* Resources */,
+				BED2B22EB5D011856AA81080 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -116,6 +148,7 @@
 				TargetAttributes = {
 					5D716B0721EC7A0C00CF07CC = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1250;
 					};
 				};
 			};
@@ -151,15 +184,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1596D9D9F5DA3653830B9EA5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MGJRouter_Swift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BED2B22EB5D011856AA81080 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MGJRouter_Swift/Pods-MGJRouter_Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MGJRouter_Swift/Pods-MGJRouter_Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MGJRouter_Swift/Pods-MGJRouter_Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D716B0421EC7A0C00CF07CC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5D716BA021F0837A00CF07CC /* DemoDetailViewController.swift in Sources */,
+				05081265277C0274005DC5AB /* MGJRouterModel.swift in Sources */,
 				5D716B2121EC7AE000CF07CC /* MGJMacro.swift in Sources */,
 				5D716B9E21F0835400CF07CC /* DemoListViewController.swift in Sources */,
 				5D716B9A21F07B8800CF07CC /* MGJRouter.swift in Sources */,
+				0508127C277EFE77005DC5AB /* swift.m in Sources */,
 				5D716B0C21EC7A0C00CF07CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,10 +373,12 @@
 		};
 		5D716B1B21EC7A0E00CF07CC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADFED214CA9445FEE705EEA6 /* Pods-MGJRouter_Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3552J6GPB6;
+				DEVELOPMENT_TEAM = UCY5FCKHAM;
 				INFOPLIST_FILE = MGJRouter_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -308,6 +387,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xw.MGJRouter-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,10 +396,12 @@
 		};
 		5D716B1C21EC7A0E00CF07CC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3AD19F8C5324FEF0E16E71B /* Pods-MGJRouter_Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3552J6GPB6;
+				DEVELOPMENT_TEAM = UCY5FCKHAM;
 				INFOPLIST_FILE = MGJRouter_Swift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -327,6 +410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.xw.MGJRouter-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

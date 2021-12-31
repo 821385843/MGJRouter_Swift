@@ -1,0 +1,16 @@
+PODS:
+  - XWSwiftLoader (0.1.0)
+
+DEPENDENCIES:
+  - XWSwiftLoader
+
+SPEC REPOS:
+  trunk:
+    - XWSwiftLoader
+
+SPEC CHECKSUMS:
+  XWSwiftLoader: 1874c080be0f5789663c106d1c34a44af1903c7b
+
+PODFILE CHECKSUM: baf30873514bc98f512615cc0b0e0130321c2a45
+
+COCOAPODS: 1.10.2

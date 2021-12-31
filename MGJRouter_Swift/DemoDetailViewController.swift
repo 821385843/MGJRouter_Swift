@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import XWSwiftLoader
 
-class DemoDetailViewController: UIViewController {
+@objc class DemoDetailViewController: UIViewController {
     
     var resultTextView: UITextView = {
         let padding: CGFloat = 20.0
@@ -253,4 +254,19 @@ extension DemoDetailViewController {
         resultTextView.text = currentLog
         resultTextView.sizeThatFits(CGSize(width: view.frame.width, height: CGFloat.greatestFiniteMagnitude))
     }
+}
+
+extension DemoDetailViewController: XWSwiftLoaderProtocol {
+    
+    static func xw_Load() {
+        // 加载注册的url
+        registerURL()
+    }
+    
+    static func xw_Initialize() {
+        
+    }
+    
+    
+    
 }

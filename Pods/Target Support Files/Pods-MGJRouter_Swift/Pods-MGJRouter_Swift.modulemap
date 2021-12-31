@@ -1,0 +1,6 @@
+framework module Pods_MGJRouter_Swift {
+  umbrella header "Pods-MGJRouter_Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}
