@@ -6,6 +6,7 @@
 注⚠️：[XWSwiftLoader](https://github.com/821385843/XWSwiftLoader)：Swift环境中`+ (void)load;`与`+ (void)initialize;`的实现。
 
 - v0.1.2
+
 ...
 
 # MGJRouter_Swift
