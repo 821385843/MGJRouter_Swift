@@ -1,3 +1,10 @@
+# 版本更新
+- v0.1.3
+新加了`XWSwiftLoader`框架，用于load类方法注册。
+注⚠️：[XWSwiftLoader](https://github.com/821385843/XWSwiftLoader)：Swift环境中`+ (void)load;`与`+ (void)initialize;`的实现。
+- v0.1.2
+...
+
 # MGJRouter_Swift
 一个高效/灵活的 iOS Swift 版 URL Router，完全实现了蘑菇街 Object-C 版 [MGJRouter](https://github.com/meili/MGJRouter) 的所有功能。虽然 github 上也有一款参照 MGJRouter 仿写的 Swift 版框架，但是却去掉了 MGJRouter 的很多功能，不实用。
 
